@@ -1,0 +1,55 @@
+section{
+    padding: 1%;
+    margin: 2%;
+}
+
+ul {
+    text-align: left;
+    font-size: 2rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+strong {
+    color: teal;
+}
+
+p {
+    margin: 5px 0 0 0;
+    font-size: medium;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.learn{
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: teal;
+    width: fit-content;
+}
+
+.learn:hover{
+    background-color: rgb(91, 228, 175);
+    transform: scale(1.15);
+    a{
+    color: rgba(0, 0, 0, 0.8)
+    }  
+}
+
+.learn a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 768px){
+    ul{
+        column-count: 3;
+		column-gap: 100px;
+		column-rule: 10px solid teal;
+    }
+    
+}
