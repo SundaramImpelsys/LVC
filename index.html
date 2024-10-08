@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand"  href="html/home.html" target="frm" style="background-color: #f8f9fa; color: black;"><img src="asserts/logo.png" style="width: 20%; height: 8%;"> Live Virtual Class</a>
+            <p class="navbar-brand"  style="background-color: #f8f9fa; color: black;"><img src="asserts/logo.png" style="width: 20%; height: 8%;"> Live Virtual Class</p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -86,14 +86,13 @@
                 </div>
                 <p>Designed and developed by: Sundaram R</p>
             </div>
-            <div class="right">
-                
-                <div class="form-container footer-form">
-                    <h4 style="color: teal;">We will reach you!</h4>
-                    <form>
+            <div class="right"> 
+                <div class="form-container footer-form" style="background-color:white">
+                    <h4 style="color: white;">We will reach you!</h4>
+                    <form method="GET" name="form" id="form">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
-                        <button type="submit" style="background-color: teal; color: white; margin-top: 5px;">Submit</button>
+                        <button type="submit" style="background-color: white; color: teal; margin-top: 5px;">Submit</button>
                     </form>
                 </div>
             </div>
@@ -101,6 +100,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="../js/form.js"></script>
 
 </body>
 </html>

@@ -30,7 +30,7 @@ body{
 }
 
 .navbar a:hover {
-    background-color: teal;
+    background: radial-gradient(circle, rgb(0, 153, 153), rgb(0, 128, 128), rgb(0, 102, 102));
     color: white;
     .icon{
         color: white;
@@ -62,6 +62,14 @@ body{
 }
 .navbar-toggler:hover{
     background-color: white;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
 }
 
 
@@ -104,7 +112,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: teal;
+    background: radial-gradient(circle, rgb(0, 153, 153), rgb(0, 128, 128), rgb(0, 102, 102));
     color: white;
     margin-top: 2%;
 }
@@ -127,8 +135,8 @@ footer {
     text-align: center;
 }
 
-.footer-form{
-    background-color: white; 
+.right .footer-form {
+    background-color: white !important;
     width: 60%;
 }
 
@@ -181,6 +189,7 @@ footer {
     }
 
     .footer-form{
+        background-color: white;
         width: 75%;
     }
 
@@ -204,4 +213,8 @@ footer {
 
 .dropdown-menu.show {
     display: block;
+}
+
+.error {
+    border: 2px solid red !important;
 }
