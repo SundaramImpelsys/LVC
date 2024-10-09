@@ -15,12 +15,24 @@ function validateForm(form) {
 
     const passwordField = form.querySelector('input[type="password"]');
     if (passwordField) {
-        const passwordValue = passwordField.value.trim();
-        if (passwordValue.length < 8) { 
+        const passwordLen = passwordField.value.trim();
+        if (passwordLen.length < 8) { 
             isValid = false;
             passwordField.classList.add('error');
         } else {
             passwordField.classList.remove('error');
+        }
+    }
+
+    const nameField = form.querySelector('#username');
+    if(nameField){
+        const nameLen = nameField.value.trim();
+        const namePattern = /^[a-zA-Z._ ]*$/;
+        if (nameLen.length < 3 || !namePattern.test(nameLen)) { 
+            isValid = false;
+            nameField.classList.add('error');
+        } else {
+            nameField.classList.remove('error');
         }
     }
 
