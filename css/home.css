@@ -26,6 +26,14 @@ h1 {
     -webkit-text-fill-color: transparent; 
 }
 
+h2{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 1px; 
+    background: linear-gradient(to bottom right, rgb(0, 153, 153) 20%, rgb(0, 142, 142) 30%, rgb(0, 119, 119) 50%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
 header h1{
     background: linear-gradient(to bottom, 
     rgb(255, 255, 255) 0%, 
@@ -86,10 +94,11 @@ section{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-.left {
+.left{
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -110,9 +119,11 @@ section{
 }
 
 .right {
+    flex:1;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px;
 
 }
@@ -122,10 +133,14 @@ section{
         flex-direction: column;
     }
 
-    .left, .right {
+    .left{
         width: 100%;
         padding: 10px;
     }
+    .right{
+        display: none;
+    } 
+    
 }
 
 
@@ -139,4 +154,13 @@ section{
     h1{
         font-size: 6vh
     }
+}
+
+.gallery-item{
+    padding: 0px 0px 20px 0px;
+    margin-top: 20px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.01);
 }

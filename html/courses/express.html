@@ -21,11 +21,22 @@
             </div>
             <div class="right">
                 <div class="gallery-item" onclick="location.href='../register.html';" class="link" style="color: white; text-decoration: none; cursor: pointer;">
-                    <img src="../../asserts/courses/express-js.png" alt="Express JS">
+                    <img src="../../asserts/courses/express-js.png" loading="lazy" alt="Express JS">
                     <h3>Express JS</h3>
                     <p>Click here to register for the course!</p>
                 </div>
             </div>
+        </div>
+
+        <div class="explore-courses">
+            <label for="course-select">Explore Other Related Courses:</label>
+            <select id="course-select" onchange="redirectToCourse()">
+                <option value="">Select a course...</option>
+                <option value="node.html">Node JS</option>
+                <option value="react.html">React JS</option>
+                <option value="angular.html">Angular JS</option>
+                <option value="GenAI.html">Gen AI</option>
+            </select>
         </div>
     </section>
 

@@ -6,23 +6,47 @@
     <title>popular Courses</title>
     <link rel="stylesheet" href="../../css/basic1.css">
     <link rel="stylesheet" href="../../css/gallery.css">
+    <link rel="stylesheet" href="../../css/form.css">
     <link rel="stylesheet" href="../../css/popCourses.css">
+    <script language="JavaScript">
+        function pulldown_menu()
+        {
+            var url = document.form.selectname.options[document.form.selectname.selectedIndex].value;
+            if (url) {
+                window.open(url, '_blank');
+            } else {
+                alert('Please select a site.');
+            }       
+        }
+        </script>
 </head>
+
 <body>
-    <h1>Popular Courses</h1>
+    <div class="main-head">
+        <h1>Popular Courses</h1>
+        <!-- <form name="form" class="pop-form">
+            <select name="selectname" SIZE="1">
+            <option value="">Select A Site</option>
+            <option value="http://www.udemy.com">Udemy</option>            
+            <option value="http://www.coursera.com">Coursera</option>            
+            <option value="http://www.unacademy.com">Unacademy</option>            
+            </select>
+            <input type="button" value="Go" onClick="JavaScript:pulldown_menu()" style="width: 100%; margin-top:10px; padding: 5px;">
+        </form> -->
+    </div>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="../../asserts/courses/ai.gif">
+            <img src="../../asserts/courses/ai.gif" loading="lazy">
             <h3>Gen AI</h3>
             <button onclick="location.href='../register.html';">Learn Now</button>
         </div>
         <div class="gallery-item">
-            <img src="../../asserts/courses/angular-js.jpeg">
+            <img src="../../asserts/courses/angular-js.jpeg" loading="lazy">
             <h3>Angular JS</h3>
             <button onclick="location.href='../register.html';">Learn Now</button>
         </div>
         <div class="gallery-item">
-            <img src="../../asserts/courses/node-js.webp">
+            <img src="../../asserts/courses/node-js.webp" loading="lazy">
             <h3>Node JS</h3>
             <button onclick="location.href='../register.html';">Learn Now</button>
         </div>

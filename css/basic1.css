@@ -29,6 +29,11 @@ body{
     flex: 1;
 }
 
+.background{
+    background: radial-gradient(circle, rgb(0, 153, 153), rgb(0, 128, 128), rgb(0, 102, 102));
+    color: white;
+}
+
 .navbar a:hover {
     background: radial-gradient(circle, rgb(0, 153, 153), rgb(0, 128, 128), rgb(0, 102, 102));
     color: white;
