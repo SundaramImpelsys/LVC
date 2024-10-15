@@ -18,7 +18,21 @@
         <div class="course-container">
             <div class="left">
                <p style="font-size: 5vh;"> <i class="fa-brands fa-angular" style=" color: teal;"> Angular JS</i> </p>
-               <p> Welcome to the AngularJS course! In this course, you'll learn the fundamentals of AngularJS, a powerful JavaScript framework for building dynamic web applications. We'll explore key concepts such as two-way data binding, MVC architecture, directives, and dependency injection, enabling you to create interactive and responsive user interfaces. Through hands-on projects and practical examples, you'll gain the skills needed to develop single-page applications (SPAs) and enhance your web development toolkit. Whether you're a beginner or looking to deepen your knowledge, this course will empower you to harness the full potential of AngularJS in your projects.</p>
+                <div class="text" id="text">
+                    Welcome to the AngularJS course! In this course, you'll learn the fundamentals of AngularJS, a powerful JavaScript framework for building dynamic web applications. We'll explore key concepts such as two-way data binding, MVC architecture, directives, and dependency injection, enabling you to create interactive and responsive user interfaces. Through hands-on projects and practical examples, you'll gain the skills needed to develop single-page applications (SPAs) and enhance your web development toolkit. Whether you're a beginner or looking to deepen your knowledge, this course will empower you to harness the full potential of AngularJS in your projects.
+                </div>
+                <span class="read-more" id="readMore">Read More</span>
+                <div class="explore-courses">
+                    <label for="course-select">Explore Other Related Courses:</label>
+                    <select id="course-select" onchange="redirectToCourse()">
+                        <option value="">Select a course...</option>
+                        <option value="node.html">Node JS</option>
+                        <option value="express.html">Express JS</option>
+                        <option value="mongoDB.html">Mongo DB</option>
+                        <option value="genAI.html">Gen AI</option>
+                    </select>
+                </div>
+
             </div>
             <div class="right">
                 <div class="gallery-item" onclick="location.href='../register.html';" class="link" style="color: white; text-decoration: none; cursor: pointer;">
@@ -29,17 +43,9 @@
             </div>
         </div>
 
-        <div class="explore-courses">
-            <label for="course-select">Explore Other Related Courses:</label>
-            <select id="course-select" onchange="redirectToCourse()">
-                <option value="">Select a course...</option>
-                <option value="node.html">Node JS</option>
-                <option value="express.html">Express JS</option>
-                <option value="mongoDB.html">Mongo DB</option>
-                <option value="GenAI.html">Gen AI</option>
-            </select>
-        </div>
+
     </section>
 
+<script src="../../js/readMode.js"></script>
 </body>
 </html>

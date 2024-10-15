@@ -18,8 +18,19 @@
         <div class="course-container">
             <div class="left">
                <p style="font-size: 5vh;"> <i class="fa-brands fa-react" style=" color: teal;"> React JS</i> </p>
-               <p> 
-                Welcome to the React.js course! In this course, you'll dive into the fundamentals of React.js, a powerful JavaScript library for building user interfaces. We’ll explore key concepts such as components, state management, and the virtual DOM, enabling you to create dynamic and responsive web applications. Through hands-on projects and practical examples, you'll learn how to manage application state, handle events, and integrate APIs, empowering you to build modern, single-page applications (SPAs). Whether you're a beginner or looking to enhance your front-end development skills, this course will provide you with the knowledge and tools to effectively leverage React.js in your projects.</p>
+               <div class="text" id="text"> 
+                Welcome to the React.js course! In this course, you'll dive into the fundamentals of React.js, a powerful JavaScript library for building user interfaces. We’ll explore key concepts such as components, state management, and the virtual DOM, enabling you to create dynamic and responsive web applications. Through hands-on projects and practical examples, you'll learn how to manage application state, handle events, and integrate APIs, empowering you to build modern, single-page applications (SPAs). Whether you're a beginner or looking to enhance your front-end development skills, this course will provide you with the knowledge and tools to effectively leverage React.js in your projects.</div>
+                <span class="read-more" id="readMore">Read More</span>
+
+            <div class="explore-courses">
+                <label for="course-select">Explore Other Related Courses:</label>
+                <select id="course-select" onchange="redirectToCourse()">
+                    <option value="">Select a course...</option>
+                    <option value="node.html">Node JS</option>
+                    <option value="express.html">Express JS</option>
+                    <option value="mongoDB.html">Mongo DB</option>
+                </select>
+            </div>
             </div>
             <div class="right">
                 <div class="gallery-item" onclick="location.href='../register.html';" class="link" style="color: white; text-decoration: none; cursor: pointer;">
@@ -29,17 +40,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="explore-courses">
-            <label for="course-select">Explore Other Related Courses:</label>
-            <select id="course-select" onchange="redirectToCourse()">
-                <option value="">Select a course...</option>
-                <option value="node.html">Node JS</option>
-                <option value="express.html">Express JS</option>
-                <option value="mongoDB.html">Mongo DB</option>
-            </select>
-        </div>
     </section>
-
+    <script src="../../js/readMode.js"></script>
 </body>
 </html>

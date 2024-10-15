@@ -20,34 +20,21 @@ section{
 }
 
 .right {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin: 0% 5%;
 }
 
-@media (max-width: 768px) {
-    .course-container {
-        flex-direction: column;
-    }
-
-    .left{
-        width: 100%;
-        padding: 10px;
-    }
-
-    .right{
-        display: none;
-    }
-}
 
 .explore-courses {
-    margin: 10px;
+    margin: 20px 0px;
     padding: 15px;
     background: radial-gradient(circle, rgb(0, 153, 153), rgb(0, 128, 128), rgb(0, 102, 102));
     color: white;
     border-radius: 5px;
+    width: 80%;
 }
 
 .explore-courses label {
@@ -73,3 +60,19 @@ section{
 }
 
 
+
+
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .right{
+        display: none;
+    }
+}

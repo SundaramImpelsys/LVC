@@ -18,28 +18,30 @@
         <div class="course-container">
             <div class="left">
                <p style="font-size: 5vh;"> <i class="fa-brands fa-node" style=" color: teal;"> Node JS</i> </p>
-               <p> Welcome to the Node.js course! In this course, you will explore the fundamentals of Node.js, a powerful JavaScript runtime built on Chrome's V8 engine that allows you to build scalable and high-performance server-side applications. We’ll cover essential concepts such as asynchronous programming, the event loop, and modules, enabling you to create efficient web servers and APIs. Through hands-on projects and practical examples, you'll learn how to handle file systems, manage databases, and work with various frameworks and libraries. Whether you're a beginner or looking to deepen your backend development skills, this course will empower you to harness the full potential of Node.js in your projects.</p>
+               <div class="text" id="text"> Welcome to the Node.js course! In this course, you will explore the fundamentals of Node.js, a powerful JavaScript runtime built on Chrome's V8 engine that allows you to build scalable and high-performance server-side applications. We’ll cover essential concepts such as asynchronous programming, the event loop, and modules, enabling you to create efficient web servers and APIs. Through hands-on projects and practical examples, you'll learn how to handle file systems, manage databases, and work with various frameworks and libraries. Whether you're a beginner or looking to deepen your backend development skills, this course will empower you to harness the full potential of Node.js in your projects.</div>
+               <span class="read-more" id="readMore">Read More</span>
+
+            <div class="explore-courses">
+                <label for="course-select">Explore Other Courses:</label>
+                <select id="course-select" onchange="redirectToCourse()">
+                    <label for="course-select">Explore Other Related Courses:</label>
+                    <option value="angular.html">Angular JS</option>
+                    <option value="genAI.html">gen AI</option>
+                    <option value="react.html">React JS</option>
+                    <option value="mongoDB.html">Mongo DB</option>
+                </select>
+            </div>
             </div>
             <div class="right">
                 <div class="gallery-item" onclick="location.href='../register.html';" class="link" style="color: white; text-decoration: none; cursor: pointer;">
                     <img src="../../asserts/courses/node-js.webp" loading="lazy" alt="Node JS">
                     <h3>Node JS</h3>
-                    <p>Click here to aregister for the course!</p>
+                    <p>Click here to register for the course!</p>
                 </div>
             </div>
         </div>
-
-        <div class="explore-courses">
-            <label for="course-select">Explore Other Courses:</label>
-            <select id="course-select" onchange="redirectToCourse()">
-                <label for="course-select">Explore Other Related Courses:</label>
-                <option value="angular.html">Angular JS</option>
-                <option value="GenAI.html">Gen AI</option>
-                <option value="react.html">React JS</option>
-                <option value="mongoDB.html">Mongo DB</option>
-            </select>
-        </div>
     </section>
 
+    <script src="../../js/readMode.js"></script>
 </body>
 </html>

@@ -201,6 +201,22 @@ button:hover {
     background-color: rgb(203, 245, 245);
 }
 
+.text {
+    max-height: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.text.expanded {
+    max-height: 300px; 
+}
+
+.read-more {
+    cursor: pointer;
+    color: teal;
+    font-weight: bold;
+}
+
 @media (max-width: 648px) {
     .nav-links {
         display: none; 

@@ -1,22 +1,69 @@
-<html>
-<title> Select Terms & Conditions for the LVC Course</title>
-<body bgcolor="#FFFFFF">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Terms & Conditions for the LVC Course</title>
+    <link rel="stylesheet" href="../css/basic1.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/terms.css">
+    <script>
+        function selectTerms() {
+            const termsDiv = document.querySelector('.terms');
+            const range = document.createRange();
+            range.selectNodeContents(termsDiv);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    </script>
+</head>
+<body>
+  <center>
+    <form name="select_all">
+        <h1>Terms and Conditions!</h1>
+        <div class="terms">
+            <strong>1. Acceptance of Terms</strong><br>
+            By accessing and using [Your Portal Name] (the "Portal"), you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the Portal.<br><br>
 
-<center>
-<form name="select_all">
+            <strong>2. Eligibility</strong><br>
+            You must be at least 13 years old to use this Portal. By using the Portal, you represent that you meet this requirement.<br><br>
 
-<textarea name="text_area" rows="10" cols="80">
-  Four score and seven years ago our fathers brought forth on this  
-continent a new nation, conceived in liberty and dedicated to the  
-proposition that all men are created equal. Now we are engaged in  
-a great civil war, testing whether that nation or any nation so  
-conceived and so dedicated can long endure. 
-</textarea>
+            <strong>3. User Accounts</strong><br>
+            - You may be required to create an account to access certain features of the Portal. You agree to provide accurate, current, and complete information during the registration process.<br>
+            - You are responsible for maintaining the confidentiality of your account information and for all activities that occur under your account.<br><br>
 
-<br>
-<input type="button" value="Highlight Text" onClick="javascript:this.form.text_area.focus();this.form.text_area.select();">
+            <strong>4. Content Ownership</strong><br>
+            - All content on the Portal, including but not limited to text, graphics, logos, and educational materials, is the property of [Your Portal Name] or its content providers and is protected by copyright and other intellectual property laws.<br>
+            - You may not reproduce, distribute, or create derivative works from any content without explicit permission.<br><br>
 
-</form>
+            <strong>5. User Conduct</strong><br>
+            You agree not to engage in any of the following prohibited activities:<br>
+            - Harassing, threatening, or intimidating other users.<br>
+            - Uploading or transmitting any content that is unlawful, harmful, or violates any rights of others.<br>
+            - Using the Portal for any unauthorized commercial purposes.<br><br>
+
+            <strong>6. Termination</strong><br>
+            We reserve the right to suspend or terminate your access to the Portal at any time, without notice, for any reason, including violation of these Terms and Conditions.<br><br>
+
+            <strong>7. Disclaimer of Warranties</strong><br>
+            The Portal is provided on an "as is" and "as available" basis. [Your Portal Name] makes no warranties or representations about the accuracy, reliability, or availability of the Portal or its content.<br><br>
+
+            <strong>8. Limitation of Liability</strong><br>
+            To the fullest extent permitted by law, [Your Portal Name] shall not be liable for any indirect, incidental, or consequential damages arising out of or in connection with your use of the Portal.<br><br>
+
+            <strong>9. Changes to Terms</strong><br>
+            We may update these Terms and Conditions from time to time. Your continued use of the Portal after any changes constitutes your acceptance of the new terms.<br><br>
+
+            <strong>10. Governing Law</strong><br>
+            These Terms and Conditions shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law principles.<br><br>
+
+            <strong>11. Contact Information</strong><br>
+            For any questions or concerns regarding these Terms and Conditions, please contact us at [Your Contact Information].
+        </div>
+        <br>
+        <input type="button" value="Highlight Text" onClick="selectTerms();">
+    </form>
 </center>
 
 </body>
