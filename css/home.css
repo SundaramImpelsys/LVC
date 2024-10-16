@@ -76,6 +76,10 @@ section {
     justify-content: center;
 }
 
+.card:hover{
+    cursor: pointer;
+}
+
 @keyframes moveit {
     0% { transform: translateX(0); }
     100% { transform: translateX(80%); }
