@@ -1,18 +1,17 @@
-header{
+header {
     padding: 2%; 
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    /* background-image: url("../asserts/header bg.png"); */
     background: radial-gradient(circle, rgb(0, 153, 153), rgb(0, 128, 128), rgb(0, 102, 102)),
             linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
     
-    position:sticky;
+    position: sticky;
     top: 0;
     z-index: 99;
     height: 15vh;
-    margin: 0%;
+    margin: 0;
 }
 
 h1 {
@@ -26,7 +25,7 @@ h1 {
     -webkit-text-fill-color: transparent; 
 }
 
-h2{
+h2 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
     letter-spacing: 1px; 
     background: linear-gradient(to bottom right, rgb(0, 153, 153) 20%, rgb(0, 142, 142) 30%, rgb(0, 119, 119) 50%);
@@ -34,7 +33,7 @@ h2{
     -webkit-text-fill-color: transparent; 
 }
 
-header h1{
+header h1 {
     background: linear-gradient(to bottom, 
     rgb(255, 255, 255) 0%, 
     rgb(255, 255, 255) 90%, 
@@ -44,7 +43,7 @@ header h1{
     -webkit-text-fill-color: transparent; 
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,12 +51,12 @@ section{
     margin: 2%;
     height: auto;
 }
-.pop{
+
+.pop {
     width: 100%; 
     background: radial-gradient(circle, rgb(0, 153, 153), rgb(0, 128, 128), rgb(0, 102, 102));
-    /* position:absolute;
-    bottom: 2%; */
     z-index: 1000;
+    margin-top: 20px; /* Ensure space above */
 }
 
 .cards-container {
@@ -71,39 +70,46 @@ section{
     animation-iteration-count: infinite; 
     animation-fill-mode: forwards; 
 }
-@keyframes moveit {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(80%);}
+
+.cards-container:hover{
+    animation: none;
+    justify-content: center;
 }
 
-.card{
+@keyframes moveit {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(80%); }
+}
+
+.card {
     padding: 1%;
     margin: 1%;
     color: white;
     font-weight: bold;
 }
 
-.c{
-    background-color: rgb(0,0,0,0.8);
+.c {
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
-
 
 .home-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: flex-start; 
     padding: 0;
     margin: 0;
+    gap: 20px; 
 }
 
-.left{
+.left {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
+    margin-left: 20px;
 }
 
 .left a {
@@ -117,46 +123,44 @@ section{
     color: #007BFF; 
 }
 
-
 .right {
-    flex:1;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-
 }
 
 @media (max-width: 768px) {
     .home-container {
         flex-direction: column;
+        gap: 15px; 
     }
 
-    .left, .right{
+    .left, .right {
         width: 100%;
         padding: 10px;
     }
-    .right .gallery-item{
+
+    .right .gallery-item {
         display: none;
     } 
-    
 }
 
-
 @media (max-width: 450px) {
-    h1{
-        font-size: 8vh
+    h1 {
+        font-size: 8vh;
     }
 }
 
 @media (max-width: 360px) {
-    h1{
-        font-size: 6vh
+    h1 {
+        font-size: 6vh;
     }
 }
 
-.gallery-item{
-    padding: 0px 0px 20px 0px;
+.gallery-item {
+    padding: 0 0 20px 0;
     margin-top: 20px;
 }
 

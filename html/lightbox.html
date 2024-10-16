@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox Example</title>
+    <link rel="stylesheet" href="../css/basic1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+</head>
+<body>
+    <section>
+    <div class="container">
+        <h1>See some of our Moments captured</h1>
+        <div class="row">
+            <a href="../asserts/lightbox/1.webp" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4"><img src="../asserts/lightbox/1.webp" class="img-fluid custom-img"></a>
+            <a href="../asserts/lightbox/2.webp" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4"><img src="../asserts/lightbox/1.webp" class="img-fluid custom-img"></a>
+            <a href="../asserts/lightbox/3.webp" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4"><img src="../asserts/lightbox/1.webp" class="img-fluid custom-img"></a>
+        </div>
+        <div class="row">
+            <a href="../asserts/lightbox/4.webp" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4"><img src="../asserts/lightbox/1.webp" class="img-fluid custom-img"></a>
+            <a href="../asserts/lightbox/5.webp" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4"><img src="../asserts/lightbox/1.webp" class="img-fluid custom-img"></a>
+            <a href="../asserts/lightbox/6.webp" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4"><img src="../asserts/lightbox/1.webp" class="img-fluid custom-img"></a>
+        </div>
+            
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <img src="" alt="Lightbox Image">
+            </div>
+            <span class="lightbox-close" data-dismiss="lightbox">&times;</span>
+            <span class="lightbox-prev">&#10094;</span>
+            <span class="lightbox-next">&#10095;</span>
+        </div>
+    </div>
+</section>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/lightbox.js"></script>
+</body>
+</html>
