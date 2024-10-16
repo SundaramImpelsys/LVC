@@ -33,7 +33,7 @@ section{
 @media (max-width: 1068px) {
     .map, .form-container{
         height: auto;
-        width: 75%;
+        width: auto;
     }
 
     .contact-container {
