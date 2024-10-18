@@ -39,6 +39,9 @@ section {
     filter: grayscale(100%);
 }
 
+.capturedMoment:hover{
+    transform: scale(1.05);
+}
 @media (max-width: 768px) {
     .gallery-item {
         margin-bottom: 20px;
